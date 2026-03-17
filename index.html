@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende C++ desde cero con nuestra guía completa. Tutoriales, ejemplos prácticos y ejercicios.">
+    <meta name="author" content="Isaac Esteban Haro Torres">
+    <title>⚙️ C++ Desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">⚙️ C++ Desde Cero</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>⚙️ C++ Desde Cero - Guía Completa</h1>
+                <p class="hero-subtitle">Aprende C++ desde los fundamentos hasta conceptos avanzados</p>
+                <blockquote class="hero-quote">
+                    "C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language."
+                </blockquote>
+                <a href="#temas" class="btn btn-primary">Explorar Temas</a>
+            </div>
+        </section>
+
+        <section id="temas" class="topics">
+            <div class="container">
+                <h2>📖 Temas del Curso</h2>
+                <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">📌</span>
+                            <h3>Módulo 1: Fundamentos</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema1-1">Introducción a C++</a></li>
+                            <li><a href="#tema1-2">Compiladores</a></li>
+                            <li><a href="#tema1-3">CMake</a></li>
+                            <li><a href="#tema1-4">Variables y tipos</a></li>
+                        </ul>
+                        <a href="#tema1-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">⚙️</span>
+                            <h3>Módulo 2: Intermedio</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema2-1">POO en C++</a></li>
+                            <li><a href="#tema2-2">Templates</a></li>
+                            <li><a href="#tema2-3">STL</a></li>
+                            <li><a href="#tema2-4">Smart pointers</a></li>
+                        </ul>
+                        <a href="#tema2-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">🚀</span>
+                            <h3>Módulo 3: Avanzado</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema3-1">Multithreading</a></li>
+                            <li><a href="#tema3-2">Programación asíncrona</a></li>
+                            <li><a href="#tema3-3">Redes y sockets</a></li>
+                            <li><a href="#tema3-4">Optimización</a></li>
+                        </ul>
+                        <a href="#tema3-1" class="btn-topic">Ver tema →</a>
+                    </div>
+                </div>
+
+                <div class="topic-content">
+                    <div class="content-detail" id="tema1-1">
+                        <h3>📌 Introducción a C++</h3>
+                        <div class="content-body">
+                            <p><strong>C++</strong> es un lenguaje de programación de propósito general creado por Bjarne Stroustrup como una extensión de C.</p>
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Programación orientada a objetos</li>
+                                <li>Alto rendimiento</li>
+                                <li>Compatibilidad con C</li>
+                                <li>Plantillas y genéricos</li>
+                            </ul>
+                            <div class="info-box">
+                                <strong>💡 Dato curioso:</strong> C++ es uno de los lenguajes más usados en desarrollo de videojuegos y sistemas embebidos.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema1-2"><h3>🔧 Compiladores</h3><div class="content-body"><p>Los compiladores más usados son GCC, Clang y MSVC.</p><pre><code>g++ main.cpp -o programa
+clang++ main.cpp -o programa</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema1-3"><h3>📦 CMake</h3><div class="content-body"><p>CMake es un sistema de build cross-platform.</p><pre><code>cmake_minimum_required(VERSION 3.10)
+project(MiProyecto)
+add_executable(mi_app main.cpp)</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema1-4"><h3>📦 Variables y Tipos</h3><div class="content-body"><p>C++ tiene tipado estático y fuerte.</p><pre><code>int edad = 30;
+double altura = 1.75;
+auto nombre = std::string("Juan");</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema2-1"><h3>🏗️ POO en C++</h3><div class="content-body"><p>C++ soporta clases, herencia y polimorfismo.</p><pre><code>class Persona {
+public:
+    std::string nombre;
+    void saludar() { std::cout << "Hola"; }
+};</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema2-2"><h3>📐 Templates</h3><div class="content-body"><p>Las plantillas permiten código genérico.</p><pre><code>template&lt;typename T&gt;
+T maximo(T a, T b) {
+    return (a > b) ? a : b;
+}</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema2-3"><h3>📚 STL</h3><div class="content-body"><p>La Standard Template Library incluye contenedores y algoritmos.</p><pre><code>std::vector&lt;int&gt; nums = {1, 2, 3};
+std::sort(nums.begin(), nums.end());</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema2-4"><h3>🧠 Smart Pointers</h3><div class="content-body"><p>Gestión automática de memoria.</p><pre><code>auto ptr = std::make_unique&lt;int&gt;(42);
+auto shared = std::make_shared&lt;int&gt;(42);</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema3-1"><h3>🧵 Multithreading</h3><div class="content-body"><p>C++11 incluye soporte para hilos.</p><pre><code>#include &lt;thread&gt;
+std::thread t([](){ /* código */ });
+t.join();</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema3-2"><h3>⚡ Async</h3><div class="content-body"><p>Programación asíncrona con futures.</p><pre><code>auto future = std::async([](){ return 42; });
+int result = future.get();</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema3-3"><h3>🌐 Redes</h3><div class="content-body"><p>Sockets para comunicación en red.</p><pre><code>// Usar bibliotecas como Boost.Asio
+// o sockets nativos del SO</code></pre></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                    <div class="content-detail" id="tema3-4"><h3>⚡ Optimización</h3><div class="content-body"><p>Técnicas para máximo rendimiento.</p><ul><li>Inline functions</li><li>Move semantics</li><li>Cache optimization</li></ul></div><a href="#temas" class="btn btn-back">← Volver a temas</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenido" class="content">
+            <div class="container">
+                <h2>📚 Contenido del Curso</h2>
+
+                <div class="modules">
+                    <div class="module">
+                        <h3>Módulo 1: Fundamentos</h3>
+                        <ul>
+                            <li>Introducción a C++</li>
+                            <li>Compiladores (GCC, Clang, MSVC)</li>
+                            <li>CMake y gestión de proyectos</li>
+                            <li>Variables y tipos de datos</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+
+                    <div class="module">
+                        <h3>Módulo 2: Intermedio</h3>
+                        <ul>
+                            <li>Programación orientada a objetos</li>
+                            <li>Templates y genéricos</li>
+                            <li>STL (Standard Template Library)</li>
+                            <li>Smart pointers</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+
+                    <div class="module">
+                        <h3>Módulo 3: Avanzado</h3>
+                        <ul>
+                            <li>Multithreading</li>
+                            <li>Programación asíncrona</li>
+                            <li>Redes y sockets</li>
+                            <li>Optimización de rendimiento</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="examples">
+            <div class="container">
+                <h2>📝 Ejemplos Rápidos</h2>
+
+                <div class="code-block">
+                    <h3>Variables y Tipos</h3>
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+int main() {
+    // Tipos fundamentales
+    int edad = 30;
+    double altura = 1.75;
+    char inicial = 'J';
+    bool esEstudiante = true;
+
+    // Auto type deduction
+    auto nombre = std::string("Juan");
+    auto pi = 3.14159;
+
+    std::cout << "Hola " << nombre << std::endl;
+    return 0;
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Punteros y Referencias</h3>
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+
+int main() {
+    int valor = 42;
+
+    // Puntero
+    int* ptr = &valor;
+    std::cout << *ptr << std::endl;
+
+    // Referencia
+    int& ref = valor;
+    ref = 100;
+
+    // Smart pointers (C++11)
+    auto unique = std::make_unique&lt;int&gt;(42);
+    auto shared = std::make_shared&lt;int&gt;(42);
+
+    return 0;
+}</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Clases</h3>
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;string&gt;
+
+class Persona {
+private:
+    std::string nombre;
+    int edad;
+
+public:
+    // Constructor
+    Persona(std::string n, int e) : nombre(n), edad(e) {}
+
+    // Métodos
+    void saludar() const {
+        std::cout << "Hola, soy " << nombre << std::endl;
+    }
+
+    // Getters/Setters
+    std::string getNombre() const { return nombre; }
+    void setEdad(int e) { edad = e; }
+};</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Templates</h3>
+                    <pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+// Función template
+template&lt;typename T&gt;
+T maximo(T a, T b) {
+    return (a > b) ? a : b;
+}
+
+// Clase template
+template&lt;typename T&gt;
+class Contenedor {
+private:
+    T valor;
+public:
+    Contenedor(T v) : valor(v) {}
+    T getValor() const { return valor; }
+};</code></pre>
+                </div>
+
+                <div class="code-block">
+                    <h3>Comandos de Compilación</h3>
+                    <pre><code class="language-bash"># Compilar simple
+g++ main.cpp -o programa
+
+# Compilar con C++17
+g++ -std=c++17 main.cpp -o programa
+
+# Compilar con warnings
+g++ -Wall -Wextra -std=c++17 main.cpp -o programa
+
+# Usar CMake
+mkdir build && cd build
+cmake ..
+make</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="resources">
+            <div class="container">
+                <h2>📖 Recursos Adicionales</h2>
+
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Documentación Oficial</h4>
+                        <ul>
+                            <li><a href="https://en.cppreference.com/" target="_blank">C++ Reference</a></li>
+                            <li><a href="https://isocpp.org/" target="_blank">ISO C++</a></li>
+                            <li><a href="https://github.com/isocpp/CppCoreGuidelines" target="_blank">C++ Core Guidelines</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>CMake - Build system</li>
+                            <li>CLion - IDE de JetBrains</li>
+                            <li>Visual Studio - IDE completo</li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-card">
+                        <h4>Comunidades</h4>
+                        <ul>
+                            <li><a href="https://isocpp.org/community" target="_blank">C++ Community</a></li>
+                            <li>Stack Overflow - C++</li>
+                            <li>Reddit r/cpp</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
