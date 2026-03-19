@@ -1,7 +1,7 @@
 // Main JavaScript para C++ Desde Cero
 
 document.addEventListener('DOMContentLoaded', function() {
-    console.log('⚙️ C++ Desde Cero - Sitio cargado correctamente');
+    console.log('☕ C++ Desde Cero - Sitio cargado correctamente');
 
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -46,8 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', () => {
         const header = document.querySelector('.header');
         if (window.pageYOffset > 100) {
-            header.style.background = 'rgba(0, 89, 156, 0.98)';
-            header.style.boxShadow = '0 4px 30px rgba(0, 89, 156, 0.3)';
+            header.style.background = 'rgba(178, 88, 10, 0.98)';
+            header.style.boxShadow = '0 4px 30px rgba(248, 152, 32, 0.3)';
         } else {
             header.style.background = 'var(--secondary-color)';
             header.style.boxShadow = 'none';
@@ -68,5 +68,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('%c⚙️ ¡Bienvenido a C++ Desde Cero!', 'font-size: 20px; color: #00599C; font-weight: bold;');
+    console.log('%c☕ ¡Bienvenido a C++ Desde Cero!', 'font-size: 20px; color: #00599C; font-weight: bold;');
 });
